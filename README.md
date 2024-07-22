@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-Trying to create a personal profile https://mphomafata.github.io
-=======
 <p>
  		<img height="100" src="./assets/postgresql-original.svg" hspace="20" >
  		<img height="100" src="./assets/python-original.svg" hspace="20" >
@@ -126,4 +123,4 @@ My scientific publication list at https://mphomafata.wordpress.com/2023/12/19/my
 For collaborations and conversations email  mafata@sun.ac.za 
 <br clear="left"/>
 Read more about my research interests at https://mphomafata.wordpress.com/ 
->>>>>>> Stashed changes
+
