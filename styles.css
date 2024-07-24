@@ -6,14 +6,3 @@
   text-align: center;
 
 }
-
-html, body { height: 100%; }
-
-body {
-  margin: 10px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 300;
-  background-color: #fdfdfd;
-}
