@@ -14,7 +14,7 @@ background-image: url('https://github.com/mpho-mafata/mpho-mafata.github.io/blob
 html, body { height: 100%; }
 
 body {
-  margin:0;
+  margin:0 30px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
