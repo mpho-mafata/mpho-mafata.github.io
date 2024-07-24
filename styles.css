@@ -1,8 +1,12 @@
 body {
   
-  border: 15px #a3b899;
-  padding: 50px;
-  margin: 20px;
-  text-align: left;
-  
-}
+        border: 15px #a3b899;
+        padding: 50px;
+        margin: 20px;
+        text-align: left;
+        }
+
+.dark{
+        background-color: #222;
+        color: #e6e6e6;
+        }
