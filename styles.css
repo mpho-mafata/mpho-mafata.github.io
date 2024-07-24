@@ -1,7 +1,7 @@
-* {
+r* {
   margin:0 30px;
   padding: 0 10px;
-  text-align: left;
+  text-align: center;
 
 }
 
@@ -10,7 +10,7 @@ html, body { height: 100%; }
 body {
   margin:0;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
   background-color: #fdfdfd;
@@ -20,5 +20,5 @@ body {
   border-top: 5px solid #333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  background-color: white;
+  background-color: grey;
 }
