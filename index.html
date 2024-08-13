@@ -18,106 +18,54 @@
      <div class="column"> <h3><a href="/contact.html">Contact Me</a></h3></div>
     </div>
 
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        /* Create two equal columns that floats next to each other */
-        .column {
-          float: center;
-          width: 50%;
-          padding: 50px;
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 500px) {
-          .column {
-            width: 40%;
-          }
-        }
-      </style>
-    
-    
-    <div class="row">
-      <div class="column">
-         <p> <img src="assets/profile_logo.ico" alt="Logo" class="logo"> </p>
-      </div>
-      
-      <div class="column">
-        <p> 
-        Mpho Mafata is an researcher in applied sciences. I am currently working as a post-doctoral fellow with the database team at the <a href="https://www0.sun.ac.za/crest/">Center for Research on Evaluation Science and Technology (CREST)</a>, South Africa. 
-        Previously, I was a joint post-doctoral fellow at the <a href="https://sagwri.sun.ac.za/">South African Grape and Wine Research Institute (SAGWRI)</a>, as well as the Stellenbosch University’s School for Data Science and Computational Thinking. I generally work in interdisciplinary environments with very different types of data (structured and unstructured). 
-        I have practiced technical skills in separation sciences (chromatography) and detection (mass spectrometry, UV-vis and fluorescence spectroscopy), wet lab/preparatory chemistry (sample preparation of organic compounds and natural products), oenology (winemaking and sensory analysis), and multivariate data analysis (MDS, MCA, PCA, MFA). 
-        My research is in the applications of Data Science in the fields: Analytical Chemistry, Biotechnology, Sensory evaluation, and Oenology.
-        </p> 
-      </div>
-   </div>
-      
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    /* Create two equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 50%;
-      padding: 20px;
-    }
-    
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 800px) {
-      .column {
-        width: 80%;
-      }
-    }
-  </style>
+  <body>
 
-      
-  <h1> Subject Areas </h1> 
-  <div class="row">
-    <div class="column">
-      <h2>Multivariate Analysis</h2>
-      <p>Analysing data using multivariate toolboxes. Focused on visualization using combinations of graphs. Read more <a href="https://github.com/mpho-mafata">here</a>.
-        <br>
-          <img src="assets/MFA_biplot.png" width="400" height="300" />
-        <br>
-      </p>
+    <div class="navbar">
+        <img src=
+"https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="logo">
     </div>
-    <div class="column">
-      <h2>Chromatographic analysis</h2>
-      <p>Unboxing the various structures and complexity in spectral data sets. By far the most interesting datasets out there.
-      Read more <a href="https://github.com/mpho-mafata/Chromatographic-data">here</a>.
-        <br>
-          <img src="assets/tic_overlay.jpg" width="400" height="300" /> 
-        <br>
-      </p>
+
+    <p>Tab header using HTML, CSS and JavaScript</p>
+
+    <div id="gfg" class="tabHTML">
+        <h1>gfg</h1>
+        <p>gfg Stands for geeksforgeeks.</p>
     </div>
-  </div>
 
-<b>Sensory analysis</b> :
-Focused on the specifics of sensory and consumer data, their structures, and features. Read more  <a href="https://github.com/mpho-mafata">here</a>.
+    <div id="HTML" class="tabHTML">
+        <h1>HTML</h1>
+        <p>HyperText Markup Language (HTML) is a scripting language that defines
+            the structure and content of web pages and applications. .</p>
+    </div>
 
-<br>
+    <div id="CSS" class="tabHTML">
+        <h1>CSS</h1>
+        <p>CSS stands for Cascading Style Sheets, and it's a language used to
+            style HTML documents.</p>
+    </div>
 
-<b>Data science</b> :
-Analysing data of various structures using SQL, R or Python. Assessing relationships and patterns using fuzzy techniques and network analysis. Read more  <a href="https://github.com/mpho-mafata/Chromatographic-data">here</a>.
+    <div id="Javascript" class="tabHTML">
+        <h1>JavaScript</h1>
+        <p>JavaScript (JS) is a text-based programming language used both on the
+            client-side and server-side that allows you to make web pages
+            interactive.</p>
+    </div>
 
+    <button class="tablink" onclick="openCity('gfg', this, 'rgb(49, 39, 39)')"
+        id="defaultOpen">gfg</button>
+    <button class="tablink"
+        onclick="openCity('HTML', this, 'rgb(153, 100, 111)')">
+          HTML
+      </button>
+    <button class="tablink"
+        onclick="openCity('CSS', this, 'rgb(10, 90, 31)')">CSS</button>
+    <button class="tablink"
+        onclick="openCity('Javascript', this, 'rgb(83, 62, 25)')">
+          Javascript
+      </button>
+    <script src="script.js"></script>
+        
+ 
 <iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 </body>
   
