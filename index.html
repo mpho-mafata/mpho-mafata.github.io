@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8 name="viewport" content="width=device-width, initial-scale=1">
     <title>Mpho Mafata</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/assets/profile_logo.ico"
             type="image/x-icon">
+   <style>
+      body {
+         font-family: Arial;
+      }
+      /* Style the tab */
+      .tab {
+         overflow: hidden;
+         border: 1px solid #ccc;
+         background-color: #f1f1f1;
+      }
+      /* Style the buttons inside the tab */
+      .tab button {
+         background-color: #f1f1f1;
+         float: left;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         padding: 14px 16px;
+         transition: 0.3s;
+         font-size: 17px;
+      }
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+         background-color: rgb(173, 150, 232);
+      }
+      /* Create an active/current tablink class */
+      .tab button.active {
+         background-color: rgb(173, 150, 232);;
+      }
+      /* Style the tab content */
+      .tabcontent {
+         text-align: center;
+         display: none;
+         padding: 6px 12px;
+         -webkit-animation: fadeEffect 1s;
+         animation: fadeEffect 1s;
+      }
+   </style>
   </head>
   
   <body>
@@ -14,42 +51,46 @@
      <div class="column"> <h3><a href="/publications.html">Publications</a></h3></div>
      <div class="column"> <h3><a href="/projects.html">Projects</a></h3></div>
      <div class="column"> <h3><a href="/contact.html">Contact Me</a></h3></div>
-
-  <body>
-
-      <div class="navbar">
-          <img src= "/assets/profile_logo.ico" alt="logo">
-      </div>
         
-      <div id="Publications" class="tabHTML">
-        <h1>Publications</h1>
-        <p> A list of scientific publications. </p>
-      </div>
+   <div class="tab">
+   <button class="tablinks" onclick="langName(event, 'Publications')">Publications</button>
+   <button class="tablinks" onclick="langName(event, 'Projects')">Projects</button>
+   <button class="tablinks" onclick="langName(event, 'Contact Me')">Contact Me</button>
+   </div>
+    
+   <div id="Publications" class="tabcontent">
+      <h3>Publications</h3>
+      <p>Publications</p>
+   </div>
+    
+   <div id="Projects" class="tabcontent">
+      <h3>Projects</h3>
+      <p>Projects</p>
+   </div>
+    
+   <div id="Contact Me" class="tabcontent">
+      <h3>Contact Me</h3>
+      <p>Contact Me</p>
+   </div>
+    
+   <script>
+      function langName(evt, name) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("tabcontent");
+         for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("tablinks");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(name).style.display = "block";
+         evt.currentTarget.className += " active";
+      }
+     </script>
 
-    <div id="Projects" class="tabHTML">
-        <h1>Projects</h1>
-        <p> A list of past, current, and upcoming projects. </p>
-    </div>
+  <iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 
-    <div id="Contact Me" class="tabHTML">
-        <h1>Contact Me</h1>
-        <p>Leave a message or contact me at the details listed.</p>
-    </div>
-
-    <button class="tablink"
-        onclick="openCity('HTML', this, 'rgb(153, 100, 111)')">
-          HTML
-      </button>
-    <button class="tablink"
-        onclick="openCity('CSS', this, 'rgb(10, 90, 31)')">CSS</button>
-    <button class="tablink"
-        onclick="openCity('Javascript', this, 'rgb(83, 62, 25)')">
-          Javascript
-      </button>
-    <script src="script.js"></script>
-        
+  </body>
  
-<iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-</body>
-  
 </html>
