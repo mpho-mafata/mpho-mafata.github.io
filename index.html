@@ -4,6 +4,7 @@
     <meta charset="UTF-8 name="viewport" content="width=device-width, initial-scale=1">
     <title>Mpho Mafata</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
     <link rel="icon" href="/assets/profile_logo.ico"
             type="image/x-icon">
    <style>
@@ -47,18 +48,24 @@
   </head>
   
   <body>
-    <h1>Mpho Mafata</h1>
-     <div class="column"> <h3><a href="/publications.html">Publications</a></h3></div>
-     <div class="column"> <h3><a href="/projects.html">Projects</a></h3></div>
-     <div class="column"> <h3><a href="/contact.html">Contact Me</a></h3></div>
-        
+  
+  <h1>Mpho Mafata</h1>
+    
    <div class="tab">
-   <button class="tablinks" onclick="langName(event, 'Publications')">Publications</button>
-   <button class="tablinks" onclick="langName(event, 'Projects')">Projects</button>
-   <button class="tablinks" onclick="langName(event, 'Contact Me')">Contact Me</button>
+     <button class="tablinks" onclick="langName(event, 'Home')">Home</button>
+     <button class="tablinks" onclick="langName(event, 'Publications')">Publications</button>
+     <button class="tablinks" onclick="langName(event, 'Projects')">Projects</button>
+     <button class="tablinks" onclick="langName(event, 'Contact Me')">Contact Me</button>
    </div>
     
-   <div id="Publications" class="tabcontent">
+   <div id="Home" class="tabcontent">
+      <h3>Welcome to my page</h3>
+      <p>This is where you will find my work</p>
+     <iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+   </div>
+
+    <div id="Publications" class="tabcontent">
       <h3>Publications</h3>
       <p>Publications</p>
    </div>
@@ -88,9 +95,6 @@
          evt.currentTarget.className += " active";
       }
      </script>
-
-  <iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-
   </body>
  
 </html>
