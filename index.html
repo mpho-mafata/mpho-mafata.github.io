@@ -49,231 +49,57 @@
   
   <body>
   
-  <nav>
-        <div class="heading">Mpho Mafata</div>
-        <span class="sideMenuButton" 
-            onclick="openNavbar()">
-            &#9776
-        </span>
+  <h1>Mpho Mafata</h1>
 
-        <div class="navbar">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Side navigation bar for 
-        responsive website -->
-    <div class="sideNavigationBar" 
-        id="sideNavigationBar">
-        <a href="#" class="closeButton" 
-            onclick="closeNavbar()">
-            &#x274C
-        </a>
-        <a href="#">Home</a>
-        <a href="#">Publications</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact Me</a>
-    </div>
-
-    <!-- Content -->
-    <div class="line" id="Home">
-        <div class="side1">
-            <h1>Mpho Mafata</h1>
-          <p>Mpho currently works as a post-doctoral fellow with the database team at the Center for Research on Evaluation Science and Technology (CREST). 
+    <!--   My designated tabs here -->
+   <div class="tab">
+     <button class="tablinks" onclick="langName(event, 'Home')" >Home</button>
+     <button class="tablinks" onclick="langName(event, 'Publications')">Publications</button>
+     <button class="tablinks" onclick="langName(event, 'Projects')">Projects</button>
+     <button class="tablinks" onclick="langName(event, 'Contact Me')">Contact Me</button>
+   </div>
+    
+   <div id="defaultOpen" class="tabcontent">
+    <!--   Welcome information -->
+    <p>Mpho currently works as a post-doctoral fellow with the database team at the Center for Research on Evaluation Science and Technology (CREST). 
       Previously, she was a joint post-doctoral fellow at the South African Grape and Wine Research Institute (SAGWRI), as well as the Stellenbosch University’s School for Data Science and Computational Thinking. 
       Her research is in the applications of Data Science in the fields: Analytical Chemistry, Biotechnology, Sensory evaluation, and Oenology. She works on transdisciplinary approaches for chemometric and sensometric data fusion.
     </p>
     <img src = "/assets/Mafata.jpg">
-            <button>
-                <a href=
-"https://www.geeksforgeeks.org/">
-                    Explore More
-                </a>
-            </button>
-        </div>
-        <div class="side2">
-            <img src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png"
-                width="500">
-        </div>
-    </div>
+     
+   </div>
 
-
+    <div id="Publications" class="tabcontent">
+      <h3>Publications</h3>
+      <p>Publications</p>
+   </div>
     
-    <section class="Publications" id="My Projects">
-        <div class="content">
-            <div class="title">
-                <span>peer-reviewed</span>
-              <p><iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-            </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            DSA
-                        </a>
-                    </div>
-                    <p>
-                        The term DSA stands for Data 
-                        Structures and Algorithms. As 
-                        the name itself suggests, it 
-                        is a combination of two 
-                        separate yet interrelated 
-                        topics.
-                    </p>
-                </div>
-                <div class="box">
-
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            HTML
-                        </a>
-                    </div>
-                    <p>
-                        HTML stands for HyperText 
-                        Markup Language. It is used 
-                        to design web pages using 
-                        the markup language.
-                    </p>
-                </div>
-
-                <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            Javascript
-                        </a>
-                    </div>
-                    <p>
-                        JavaScript (JS) is the most 
-                        popular lightweight, interpreted 
-                        compiled programming language.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="Projects" id="My Projects">
-        <div class="content">
-            <div class="title">
-                <span>peer-reviewed</span>
-              <p><iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-            </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            DSA
-                        </a>
-                    </div>
-                    <p>
-                        The term DSA stands for Data 
-                        Structures and Algorithms. As 
-                        the name itself suggests, it 
-                        is a combination of two 
-                        separate yet interrelated 
-                        topics.
-                    </p>
-                </div>
-                <div class="box">
-
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            HTML
-                        </a>
-                    </div>
-                    <p>
-                        HTML stands for HyperText 
-                        Markup Language. It is used 
-                        to design web pages using 
-                        the markup language.
-                    </p>
-                </div>
-
-                <div class="box">
-                    <div class="topic">
-                        <a href="" target="_blank">
-                            Javascript
-                        </a>
-                    </div>
-                    <p>
-                        JavaScript (JS) is the most 
-                        popular lightweight, interpreted 
-                        compiled programming language.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="content">
-            <div class="title"><span>Sign Up</span></div>
-            <div class="contactMenu">
-                <div class="input1">
-                    <div class="label1">Your Name</div>
-                    <div class="input2">
-                        <input type="text" 
-                            placeholder="Enter your Name here">
-                    </div>
-                    <div class="label1">
-                        <label>Your Email</label>
-                    </div>
-                    <div class="input2">
-                        <input type="text" 
-                            placeholder="Enter your Email here">
-                    </div>
-                    <div class="label1">
-                        <label>Your Password</label>
-                    </div>
-                    <div class="input2">
-                        <input type="text" 
-                            placeholder="Enter your Password here">
-                    </div>
-                    <div class="button">
-                        <button>Sign Up</button>
-                    </div>
-                </div>
-                <div class="input3">
-                    <div class="rightside1">
-                        <div class="title1">
-                            <span>
-                                Contact Us
-                            </span>
-                        </div>
-                        <div class="content1">
-                            A-143, 9th Floor, Sovereign 
-                            Corporate Tower, Sector-136, 
-                            Noida, Uttar Pradesh - 201305
-                        </div>
-                        <div class="title1">
-                            <span>More Information</span>
-                        </div>
-                        <div class="content1">
-                            Welcome!
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer section -->
-    <footer>
-        <div class="footer">
-            <span>
-                <p>Mpho Mafata</p>
-            </span>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-
+   <div id="Projects" class="tabcontent">
+      <h3>Projects</h3>
+      <p><iframe width="1000" height="800" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+</p>
+   </div>
     
+   <div id="Contact Me" class="tabcontent">
+      <h3>Contact Me</h3>
+      <p>Contact Me</p>
+   </div>
+    
+   <script>
+      function langName(evt, name) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("tabcontent");
+         for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("tablinks");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(name).style.display = "block";
+         evt.currentTarget.className += " active";
+      }
+     </script>
   </body>
   
 </html>
