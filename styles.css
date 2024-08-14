@@ -1,7 +1,7 @@
 body {
         border: 15px #a3b899;
         padding: 50px;
-        margin: 20px;
+        margin: 0 0 10px 170px;
         text-align: left;
         }
 
@@ -13,7 +13,7 @@ body {
 @media (prefers-color-scheme: dark) {
     body, h1, h2, h3, h4, h5, p, p code, header *, a, .has-custom-custom-caramel-background-color, .wp-block-post-title, input, .wp-block-post-title.has-medium-font-size {
 	    background-color: #151515 !important;
-      color: #7b8d75 !important;
+      color: #bbb !important;
     }
   
   code {
