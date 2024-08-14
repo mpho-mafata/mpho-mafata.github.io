@@ -1,4 +1,4 @@
-<script>
+
    function langName(evt, name) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -12,4 +12,13 @@
       document.getElementById(name).style.display = "block";
       evt.currentTarget.className += " active";
    }
-</script>
+
+function openNavbar() {
+    document.getElementById("sideNavigationBar")
+        .style.width = "50%";
+}
+function closeNavbar() {
+    document.getElementById("sideNavigationBar")
+        .style.width = "0%";
+}
+
