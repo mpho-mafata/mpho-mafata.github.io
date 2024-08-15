@@ -6,6 +6,11 @@ body {
     	margin-right: 100px;
     	text-align: center;
         }
+<!-- SET MY HOME PAGE INTO TWO COLUMNS-->
+.container {
+    column-count: 2;
+    column-gap: 20px;
+}
 
 <! –– FOR RESPONDING TO SYSTEM DARK MODE ––>
 .dark{
