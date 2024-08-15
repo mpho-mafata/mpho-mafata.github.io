@@ -22,3 +22,9 @@ function closeNavbar() {
         .style.width = "0%";
 }
 
+<!-- SET MY HOME PAGE INTO TWO COLUMNS-->
+.container {
+    column-count: 2;
+    column-gap: 20px;
+}
+
