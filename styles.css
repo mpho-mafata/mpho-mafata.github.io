@@ -5,6 +5,10 @@ body {
     	margin-left: 100px;
     	margin-right: 100px;
     	text-align: center;
+	color: #525252;
+        font-size: 18px;
+        line-height:20px;
+        font-family: 'Lato', Arial, sans-serif;
         }
 <!-- SET MY HOME PAGE INTO TWO COLUMNS-->
 .container {
