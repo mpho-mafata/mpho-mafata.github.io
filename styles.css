@@ -1,8 +1,10 @@
 body {
-        border: 15px #a3b899;
-        padding: 50px;
-        margin: 0 0 10px 170px;
-        text-align: left;
+        border: 15px #f2f3f3;
+        padding-top: 20px;
+    	padding-bottom: 12px;
+    	margin-left: 100px;
+    	margin-right: 100px;
+    	text-align: center;
         }
 
 <! –– FOR RESPONDING TO SYSTEM DARK MODE ––>
