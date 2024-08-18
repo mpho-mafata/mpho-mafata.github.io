@@ -151,6 +151,18 @@
    <div id="Contact Me" class="tabcontent">
     <h3>My pages</h3>
 
+     <style>
+        .column {
+    float: center;
+    width: 33%;
+        }
+      .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+     
      <div class="row">
         <div class="column">
            <a href="https://www.linkedin.com/in/mafatampho/" target="_blank">LinkedIn</a>
@@ -167,16 +179,6 @@
            </br>
           </br>
        </div>
-    </div>
-
-     <div class="row">
-       <div class="column">
-         <a href="https://mphomafata.wordpress.com/" target="_blank">Blog page</a>
-         </br>
-         <img height="200" src="assets/socials/blog.png">
-         </br>
-         </br>
-      </div>
       
     <div class="column">
      <a href="https://github.com/mpho-mafata" target="_blank">Github</a>
@@ -186,7 +188,13 @@
       </br>
      </div>
   </div>
-    
+     
+         <a href="https://mphomafata.wordpress.com/" target="_blank">Blog page</a>
+         </br>
+         <img height="200" src="assets/socials/blog.png">
+         </br>
+         </br>
+     
    <script>
       function langName(evt, name) {
          var i, tabcontent, tablinks;
