@@ -56,11 +56,30 @@
          -webkit-animation: fadeEffect 1s;
          animation: fadeEffect 1s;
       }
+	    /* Style the column design */
+        .column {
+    float: left;
+    width:40%;
+        }
+      .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+     /* Make images responsive*/
+     img {
+    max-width: 100%;
+    max-height: 100%;
+}
+     .square {
+    height: 400px;
+    width: 400px;
+}
    </style>
 <body>
 </br>
   
-<a href="dashboards.html" target="_blank"> <h2>Dashboards and Analysis Reports</h2> </a>
+<h2>Dashboards and Analysis Reports</h2>
 
   <p>
  		<img height="120" src="./assets/looker-by-google-cloud.jpeg" hspace="20" >
@@ -68,17 +87,32 @@
  		<img height="100" src="./assets/excel.png" hspace="20" >
 		<img height="100" src="./assets/powerbi-original.svg" hspace="20" >
   </p>
-
+<div class="row">
+    
+    <div class="column">
+    <h3> Google looker</h3>
+    <p>The dashboard is very well sized, especially for embedding. It has a variety of charts available. Easy to compile.</p>
+    <iframe width="600" height="350" src="https://lookerstudio.google.com/embed/reporting/93c51871-4735-4e8a-85ec-6f8b289e82f3/page/p_q71psyppdd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+  </div>
+  
+  <div class="column">
+    <h3> Excel Dashboard</h3>
+    <p>Very laborious to compile. Much like other Microsoft apps, it is not very responsive especially for embedding. Unintuitive sizing.</p>
+    <iframe width="800" height="350" frameborder="0" scrolling="yes" src="https://1drv.ms/x/c/2a3aa45515863cc3/IQOp_CC68QINRZyyjUpg3EG7AUN5jmlRIlDOb-NqxSlUNQs?em=2&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=cc"></iframe>
+  </div>
+    
+  </div>
+	
   </br>
   
-<a href="interactive.html" target="_blank"> <h2>Interactive Plots</h2></a>
+ <h2>Interactive Plots</h2>
 
 	<p>
  		<img height="100" src="./assets/python-original.svg" hspace="20" >
  		<img height="120" src="./assets/plotly.png" hspace="20" >
   	</p>
 
-	<object data="./assets/interactive/chord_non_vintage.html" type="text/html"  style="float:left;width:100%;height:100vh;">
+	<object data="./assets/interactive/chord_non_vintage.html" type="text/html"  style="float:left;width:70%;height:100vh;">
 	</object>
 
 </body>
