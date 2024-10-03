@@ -1,3 +1,4 @@
+<! –– BODY TEXT SETTING ––>
 body {
         border: 15px #f2f3f3;
         padding-top: 0px;
@@ -38,16 +39,19 @@ body {
 
 
 <! –– NAVIGATION TABS STYLE ––>
-   body {
-      font-family: 'Lato', Arial, sans-serif;
-   }
-   /* Style the tab */
+      body {
+        color: #525252;
+        font-size: 17px;
+        text-align: left;
+        font-family: 'Lato', Arial, sans-serif;
+      }
+<! –– Style the tab ––>
    .tab {
       overflow: hidden;
       border: 1px solid #ccc;
       background-color: #f1f1f1;
    }
-   /* Style the buttons inside the tab */
+<! –– Style the buttons inside the tab ––>
    .tab button {
       background-color: #f1f1f1;
       float: left;
@@ -58,15 +62,15 @@ body {
       transition: 0.3s;
       font-size: 17px;
    }
-   /* Change background color of buttons on hover */
+<! –– Change background color of buttons on hover ––>
    .tab button:hover {
-      background-color: rgb(173, 150, 232);
+      background-color: #6c8e80;
    }
-   /* Create an active/current tablink class */
+<! –– Create an active/current tablink class ––>
    .tab button.active {
-      background-color: rgb(173, 150, 232);;
+      background-color: #6c8e80;;
    }
-   /* Style the tab content */
+<! –– Style the tab content ––>
    .tabcontent {
       text-align: left;
       display: none;
@@ -74,4 +78,30 @@ body {
       -webkit-animation: fadeEffect 1s;
       animation: fadeEffect 1s;
    }
+<! –– Style the column design ––>
+        .column {
+    float: left;
+    width:40%;
+        }
+      .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+<! –– Make images responsive ––>
+	     img {
+	    max-width: 100%;
+	    max-height: 100%;
+		}
+	     .square {
+	    height: 400px;
+	    width: 400px;
+	}
+<! –– SETTINGS FOR THE HEADER/BANNER SECTION ––>
+     #banner {
+	background: url('/assets/header.png');
+	width: 100%;
+	min-height: 189px;
+	background-size: cover;
+}
 
