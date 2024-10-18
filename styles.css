@@ -105,3 +105,10 @@ body {
 	background-size: cover;
 }
 
+footer {
+	text-align: right;
+	background-color: white;
+	border: 15px #f2f3f3;
+        padding-top: 6px;
+    	padding-bottom: 12px;
+}
