@@ -83,25 +83,27 @@
     height: 400px;
     width: 400px;
 }
+footer {
+	text-align: right;
+	background-color: white;
+	border: 15px #f2f3f3;
+        padding-top: 6px;
+    	padding-bottom: 12px;
+}
    </style>
 
   <body>
  
-   <script>
-      function langName(evt, name) {
-         var i, tabcontent, tablinks;
-         tabcontent = document.getElementsByClassName("tabcontent");
-         for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-         }
-         tablinks = document.getElementsByClassName("tablinks");
-         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-         }
-         document.getElementById(name).style.display = "block";
-         evt.currentTarget.className += " active";
-      }
-     </script>
+<footer>
+<a  href="mailto:qt.makati@gmail.com" target="_blank"> <img height="30" hspace="20" src="assets/socials/gmail.png"></a>
+<a  href="https://www.linkedin.com/in/mafatampho/" target="_blank"> <img height="30" hspace="20" src="assets/socials/linkedin.png"></a>
+<a href="https://www.researchgate.net/profile/Mpho-Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/resgate.png"></a>
+<a href="https://github.com/mpho-mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/github.png"></a>
+<a href="https://orcid.org/0000-0002-6468-7193" target="_blank"><img height="30" hspace="20" src="assets/socials/orcid.png"></a>
+<a href="https://x.com/Mpho_Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/twitter.jpg"></a>
+<a href="https://mphomafata.wordpress.com/" target="_blank"><img height="30" hspace="20"  src="assets/socials/blog.png"></a>
+</footer>
+ 
   </body>
   
 </html>
