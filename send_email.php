@@ -4,11 +4,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = $_POST['message'];
 
     // Format the email body
-    $subject = "New Message from Potential Employer";
+    $subject = "New Message from gitpage";
     $body = "Name: " . $name . "\n\n" . "Message: " . $message;
 
     // Send the email
-    $to = "your_email@example.com";
+    $to = "qt.makati@gmail.com";
     $headers = "From: " . $name . "\r\n";
 
     if(mail($to, $subject, $body, $headers)) {
