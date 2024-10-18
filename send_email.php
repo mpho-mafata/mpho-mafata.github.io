@@ -24,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // If no errors, send email
     if (empty($errors)) {
-        // Recipient email address (replace with your own)
-        $recipient = "recipient@example.com";
+        // Recipient email address 
+        $recipient = "qt.makati@gmail.com";
 
         // Additional headers
         $headers = "From: $name <$email>";
