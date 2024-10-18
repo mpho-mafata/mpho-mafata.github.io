@@ -102,14 +102,14 @@
     <a href="https://x.com/Mpho_Mafata" target="_blank"><img height="100" hspace="20" src="assets/socials/twitter.jpg"></a>
     <a href="https://mphomafata.wordpress.com/" target="_blank"><img height="100" hspace="20"  src="assets/socials/blog.png"></a>
 
-<form action="/action_page.php">
-  <label for="firstName">First name:</label>
-  <input type="text" id="firstName" name="firstName"><br><br>
-  <label for="lastName">Last name:</label>
-  <input type="text" id="lastName" name="lastName"><br><br>
-  <label for="freeform">Tell us how you heard about us:</label><br>
-  <textarea id="freeform" name="freeform" rows="4" cols="50"></textarea><br><br>
- <button> <input type="submit" value="Submit">  onclick="mailto:qt.makati@gmail.com" </button>
+<form action="send_email.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea><br><br>
+
+  <input type="submit" value="Submit">
 </form>
 	  
   </body>
