@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8 name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
-	  <script type="text/javascript" src="script.js" ></script>
     <link rel="script" type="text/javascript" href="script.js">
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
 	<div id="banner"></div>
@@ -176,6 +175,28 @@ footer {
 <a href="https://x.com/Mpho_Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/twitter.jpg"></a>
 <a href="https://mphomafata.wordpress.com/" target="_blank"><img height="30" hspace="20"  src="assets/socials/blog.png"></a>
 </footer>
+
+<script>
+	// Get the scroll button:
+let mybutton = document.getElementById("scrollbutton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
 </body>
   
