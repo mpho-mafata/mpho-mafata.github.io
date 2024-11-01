@@ -41,9 +41,7 @@
     	<a href="contact.html"> <button class="tablinks" onclick="langName(event, 'Contact Me')">Contact Me</button> </a>
   </div>
 
-
-
-   <style>
+<style>
       body {
         border: 15px #f2f3f3;
         padding-top: 0px;
@@ -194,20 +192,93 @@ footer {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* dropdown arrow */
+a.header-nav-folder-title:after {
+    content: "\e009";
+    font-family: 'squarespace-ui-font';
+    position: relative;
+    top: 2px;
+}
    </style>
 
   <body>
- 
+    
+   <div id="Home" class="tabcontent" style="display: block;">
+    <!--   Welcome information -->
+      <div class="row">
+        <div class="column">
+            <img width=400 src="/assets/Mafata.png">
+        </div>
+        <div class="column">
+          
+        <b> <i> <h2> Hi, I am Mpho Mafata. Welcome to my webpage. </h2> </i> </b>
+		<p font-size: calc(1vw + 1vh);>		
+			I am an applied sciences researcher.
+            		I work in interdisciplinary environments with various types of data (structured and unstructured) with an interest in multimodal data intergration and analysis. 
+         	 	</br>
+         	 	I have practiced technical skills in separation sciences (chromatography) and detection (mass spectrometry, UV-vis and fluorescence spectroscopy), wet lab/preparatory chemistry (sample preparation of organic compounds and natural products), oenology (winemaking and sensory analysis), and multivariate data analysis (MDS, MCA, PCA, MFA). 
+          		</br>
+          		My research is in the applications of Data Science in the fields: Analytical Chemistry, Biotechnology, Sensory evaluation, and Oenology.
+        	</p>
+	</div>
+      </div>
+    
+    </div>
+
 <footer>
-<a  href="mailto:qt.makati@gmail.com" target="_blank"> <img height="30" hspace="20" src="assets/socials/gmail.png"></a>
-<a  href="https://www.linkedin.com/in/mafatampho/" target="_blank"> <img height="30" hspace="20" src="assets/socials/linkedin.png"></a>
-<a href="https://www.researchgate.net/profile/Mpho-Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/resgate.png"></a>
-<a href="https://github.com/mpho-mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/github.png"></a>
-<a href="https://orcid.org/0000-0002-6468-7193" target="_blank"><img height="30" hspace="20" src="assets/socials/orcid.png"></a>
-<a href="https://x.com/Mpho_Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/twitter.jpg"></a>
-<a href="https://mphomafata.wordpress.com/" target="_blank"><img height="30" hspace="20"  src="assets/socials/blog.png"></a>
+<div class="share-buttons">
+        <button class="share-btn" id="facebook-share">Share on Facebook</button>
+        <button class="share-btn" id="twitter-share">Share on Twitter</button>
+        <button class="share-btn" id="linkedin-share">Share on LinkedIn</button>
+</div>
 </footer>
- 
-  </body>
-  
+
+<button onclick="topFunction()" id="scrollbutton" title="Go to top">Back to top</button>
+<script>
+	// Get the scroll button:
+let mybutton = document.getElementById("scrollbutton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+document.getElementById('facebook-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=https://mpho-mafata.github.io/home.html`;
+    window.open(shareUrl, '_blank');
+});
+
+document.getElementById('twitter-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(document.title);
+    const shareUrl = `https://twitter.com/intent/tweet?url=https://mpho-mafata.github.io/home.html&text="Check out this website"`;
+    window.open(shareUrl, '_blank');
+});
+
+document.getElementById('linkedin-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=https://mpho-mafata.github.io/home.html`;
+    window.open(shareUrl, '_blank');
+});
+</script>
+
+<script src="script.js"></script>
+	  
+</body>
+
+
+	
 </html>
