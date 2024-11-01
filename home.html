@@ -226,22 +226,14 @@ a.header-nav-folder-title:after {
       </div>
     
     </div>
-
+	  
+<footer>
+Share this page
 <div class="share-buttons">
         <button class="share-btn" id="facebook-share">Share on Facebook</button>
         <button class="share-btn" id="twitter-share">Share on Twitter</button>
         <button class="share-btn" id="linkedin-share">Share on LinkedIn</button>
 </div>
-	  
-<footer>
-Share this page
-<a  href="mailto:qt.makati@gmail.com" target="_blank"> <img height="30" hspace="20" src="assets/socials/gmail.png"></a>
-<a  href="https://www.linkedin.com/in/mafatampho/" target="_blank"> <img height="30" hspace="20" src="assets/socials/linkedin.png"></a>
-<a href="https://www.researchgate.net/profile/Mpho-Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/resgate.png"></a>
-<a href="https://github.com/mpho-mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/github.png"></a>
-<a href="https://orcid.org/0000-0002-6468-7193" target="_blank"><img height="30" hspace="20" src="assets/socials/orcid.png"></a>
-<a href="https://x.com/Mpho_Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/twitter.jpg"></a>
-<a href="https://mphomafata.wordpress.com/" target="_blank"><img height="30" hspace="20"  src="assets/socials/blog.png"></a>
 </footer>
 
 <button onclick="topFunction()" id="scrollbutton" title="Go to top">Back to top</button>
@@ -266,6 +258,24 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+document.getElementById('facebook-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+    window.open(shareUrl, '_blank');
+});
+
+document.getElementById('twitter-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(document.title);
+    const shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+    window.open(shareUrl, '_blank');
+});
+
+document.getElementById('linkedin-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    window.open(shareUrl, '_blank');
+});
 </script>
 
 <script src="script.js"></script>
