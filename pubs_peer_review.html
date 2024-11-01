@@ -214,17 +214,15 @@ footer {
 <li>	Kuttel, M., Jackson, G. E., Mafata, M., and Ravenscroft, N., 2015. Capsular polysaccharide conformations in pneumococcal serotypes 19F and 19A. Carbohydrate Research. 406C, 27–33. DOI: <a href="https://doi.org/10.1016/j.carres.2014.12.013">https://doi.org/10.1016/j.carres.2014.12.013</a> </li>
       </ol>      
 
-<button onclick="topFunction()" id="scrollbutton" title="Go to top">Back to top</button>
 <footer>
-<a  href="mailto:qt.makati@gmail.com" target="_blank"> <img height="30" hspace="20" src="assets/socials/gmail.png"></a>
-<a  href="https://www.linkedin.com/in/mafatampho/" target="_blank"> <img height="30" hspace="20" src="assets/socials/linkedin.png"></a>
-<a href="https://www.researchgate.net/profile/Mpho-Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/resgate.png"></a>
-<a href="https://github.com/mpho-mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/github.png"></a>
-<a href="https://orcid.org/0000-0002-6468-7193" target="_blank"><img height="30" hspace="20" src="assets/socials/orcid.png"></a>
-<a href="https://x.com/Mpho_Mafata" target="_blank"><img height="30" hspace="20" src="assets/socials/twitter.jpg"></a>
-<a href="https://mphomafata.wordpress.com/" target="_blank"><img height="30" hspace="20"  src="assets/socials/blog.png"></a>
+<div class="share-buttons">
+        <button class="share-btn" id="facebook-share">Share on Facebook</button>
+        <button class="share-btn" id="twitter-share">Share on Twitter</button>
+        <button class="share-btn" id="linkedin-share">Share on LinkedIn</button>
+</div>
 </footer>
 
+<button onclick="topFunction()" id="scrollbutton" title="Go to top">Back to top</button>
 <script>
 	// Get the scroll button:
 let mybutton = document.getElementById("scrollbutton");
@@ -245,8 +243,29 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+document.getElementById('facebook-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=https://mpho-mafata.github.io/pubs_peer_review.html`;
+    window.open(shareUrl, '_blank');
+});
+
+document.getElementById('twitter-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(document.title);
+    const shareUrl = `https://twitter.com/intent/tweet?url=https://mpho-mafata.github.io/pubs_peer_review.html&text="Check out this website"`;
+    window.open(shareUrl, '_blank');
+});
+
+document.getElementById('linkedin-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=https://mpho-mafata.github.io/pubs_peer_review.html`;
+    window.open(shareUrl, '_blank');
+});
 </script>
 
+<script src="script.js"></script>
+	  
 </body>
-  
+
 </html>
