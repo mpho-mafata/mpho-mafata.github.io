@@ -27,7 +27,6 @@
 
 	  	<div class="dropdown">
     			<button class="dropbtn">Outputs & Science Engagement
-      				<span class="caret"></span>
     			</button>
     			<div class="dropdown-content">
       				<a href="pubs_peer_review.html">Peer-reviewed articles</a>
@@ -192,7 +191,13 @@ footer {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/* dropdown arrow */
+.dropdown:after {
+    content: ' ▾';
+    font-family: 'squarespace-ui-font';
+    position: relative;
+    top: 4px;
+}
    </style>
 
   <body>
