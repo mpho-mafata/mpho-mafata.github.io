@@ -39,14 +39,18 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+};
 
 // share buttons configuration
+function fbshare() {
 document.getElementById('facebook-share').addEventListener('click', function() {
     const url = encodeURIComponent(window.location.href);
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
     window.open(shareUrl, '_blank');
 });
+
+};
+      
 document.getElementById('twitter-share').addEventListener('click', function() {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(document.title);
