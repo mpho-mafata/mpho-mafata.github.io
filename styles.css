@@ -1,11 +1,11 @@
-<! –– FOR RESPONDING TO SYSTEM DARK MODE ––>
+/* FOR RESPONDING TO SYSTEM DARK MODE */
 .dark{
         background-color: #222;
         color: #e6e6e6;
         }
 
-<! –– BODY TEXT SETTING ––>
-body {
+/* BODY TEXT SETTING */
+body{
     border: 15px #f2f3f3;
     padding-top: 0px;
     padding-bottom: 12px;
@@ -33,7 +33,7 @@ p{text-align: justify;
   color: #525252;
   font-size: 17px;
 	}
-<!-- SET MY HOME PAGE INTO TWO COLUMNS-->
+/* SET MY HOME PAGE INTO TWO COLUMNS */
 .container {
     column-count: 2;
     column-gap: 20px;
