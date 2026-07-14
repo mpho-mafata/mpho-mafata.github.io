@@ -57,6 +57,7 @@ p{text-align: justify;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+	font-family: 'Arial';
       }
 /* Change background color of buttons on hover */
 .tab button:hover {
