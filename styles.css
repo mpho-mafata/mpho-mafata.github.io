@@ -140,7 +140,7 @@ footer {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
 	position:absolute;
-	font-family: inherit;
+	font-family: Arial;
 	top:1%;
 	display: none;
 	background-color: #ddd;
