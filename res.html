@@ -107,10 +107,12 @@ document.getElementById('twitter-share').addEventListener('click', function() {
 
 document.getElementById('linkedin-share').addEventListener('click', function() {
     const url = encodeURIComponent(window.location.href);
-    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
     window.open(shareUrl, '_blank');
 });
 </script>
+	
+<script src="script.js"></script>
 	  
 </body>
 
