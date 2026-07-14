@@ -17,12 +17,18 @@ body {
     line-height:30px;
     font-family: 'Arial';
         }
-h1,h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5{
 	text-align: center; 
 	font-family: 'Arial';
 	font-style: italic;
 	color: #525252;
     font-size: 17px;
+	}
+p{text-align: justify;
+  text-justify: inter-word; 
+  font-family: 'Arial';
+  color: #525252;
+  font-size: 17px;
 	}
 <!-- SET MY HOME PAGE INTO TWO COLUMNS-->
 .container {
