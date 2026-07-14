@@ -81,8 +81,8 @@ p{text-align: justify;
     display: table;
     clear: both;
     }
-     /* Make images responsive*/
-     img {
+/* Make images responsive*/
+img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -131,14 +131,14 @@ footer {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: #6c8e80;
-  font-family: inherit; /* Important for vertical alignment on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+	font-size: 16px;
+  	border: none;
+  	outline: none;
+  	color: black;
+  	padding: 14px 16px;
+  	background-color: #6c8e80;
+	font-family: 'Arial';
+  	margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a background color to navbar links on hover */
@@ -148,6 +148,7 @@ footer {
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
+	font-family: 'Arial';
 	position:absolute;
 	top:1%;
 	display: none;
