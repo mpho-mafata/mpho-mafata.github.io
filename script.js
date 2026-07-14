@@ -21,7 +21,7 @@ function closeNavbar() {
         .style.width = "0%";
 }
 
-// Get the scroll button:
+// Get the scroll button
 let mybutton = document.getElementById("scrollbutton");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -40,3 +40,20 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// share buttons configuration
+document.getElementById('facebook-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+    window.open(shareUrl, '_blank');
+});
+document.getElementById('twitter-share').addEventListener('click', function() {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(document.title);
+    const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text="Check out this website"`;
+    window.open(shareUrl, '_blank');
+});
+document.getElementById('linkedin-share').addEventListener('click', function() {
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
+    window.open(shareUrl, '_blank');
+});
