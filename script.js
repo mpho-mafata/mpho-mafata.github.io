@@ -1,5 +1,4 @@
-
-   function langName(evt, name) {
+function langName(evt, name) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -22,12 +21,6 @@ function closeNavbar() {
         .style.width = "0%";
 }
 
-<!-- SET MY HOME PAGE INTO TWO COLUMNS-->
-.container {
-    column-count: 2;
-    column-gap: 20px;
-}
-
 // Get the scroll button:
 let mybutton = document.getElementById("scrollbutton");
 
@@ -47,22 +40,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-document.getElementById('facebook-share').addEventListener('click', function() {
-    const url = encodeURIComponent(window.location.href);
-    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-    window.open(shareUrl, '_blank');
-});
-
-document.getElementById('twitter-share').addEventListener('click', function() {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(document.title);
-    const shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-    window.open(shareUrl, '_blank');
-});
-
-document.getElementById('linkedin-share').addEventListener('click', function() {
-    const url = encodeURIComponent(window.location.href);
-    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-    window.open(shareUrl, '_blank');
-});
