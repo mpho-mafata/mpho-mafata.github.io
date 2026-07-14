@@ -19,20 +19,17 @@ body {
         }
 h1{
 	text-align: center; 
-	font-family: 'Arial';
 	color: #525252;
     font-size: 20px;
 	}
 h2,h3,h4,h5{
 	text-align: center; 
-	font-family: 'Arial';
 	font-style: italic;
 	color: #525252;
     font-size: 18px;
 	}
 p{text-align: justify;
   text-justify: inter-word; 
-  font-family: 'Arial';
   color: #525252;
   font-size: 17px;
 	}
@@ -57,7 +54,6 @@ p{text-align: justify;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-	font-family: 'Arial';
       }
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -153,7 +149,6 @@ footer {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
 	position:absolute;
-	font-family: Arial;
 	top:1%;
 	display: none;
 	background-color: #ddd;
@@ -165,7 +160,6 @@ footer {
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-	font-family: 'Arial';
   color: black;
   padding: 12px 16px;
   text-decoration: none;
