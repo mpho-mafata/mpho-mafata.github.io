@@ -42,14 +42,11 @@ function topFunction() {
 };
 
 // share buttons configuration
-function fbshare() {
 document.getElementById('facebook-share').addEventListener('click', function() {
     const url = encodeURIComponent(window.location.href);
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
     window.open(shareUrl, '_blank');
 });
-
-};
       
 document.getElementById('twitter-share').addEventListener('click', function() {
     const url = encodeURIComponent(window.location.href);
