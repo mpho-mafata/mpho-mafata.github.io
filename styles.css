@@ -120,7 +120,9 @@ footer {
   float: left;
   overflow: hidden;
 }
-
+.dropdown .dropbtn .active {
+	background-color: #6c8e80;
+}
 /* Dropdown button */
 .dropdown .dropbtn {
 	font-size: 16px;
