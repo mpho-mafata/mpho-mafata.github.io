@@ -134,7 +134,7 @@ footer {
   	color: black;
   	padding: 14px 16px;
   	background-color: #6c8e80;
-	font-family: arial;
+	/* font-family: arial; */
   	margin: 0; /* Important for vertical align on mobile phones */
 }
 
