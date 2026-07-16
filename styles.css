@@ -137,7 +137,8 @@ footer {
 
 /* Add a background color to navbar links on hover */
 .dropdown:hover .dropbtn {
-  background-color: #6c8e80;
+	background-color: #6c8e80;
+	position:relative;
 }
 
 /* Dropdown content (hidden by default) */
