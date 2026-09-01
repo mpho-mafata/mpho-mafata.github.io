@@ -195,10 +195,13 @@ vertical-align: text-top;
 #facebook-share {
     background-color: #3b5998;
     height: 100vh;
+    font-size: 18px;
 }
 
 #facebook-share:hover {
     background-color: #2d4373;
+    height: 100vh;
+    font-size: 18px;
 }
 
 #twitter-share {
