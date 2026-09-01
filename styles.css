@@ -194,6 +194,7 @@ vertical-align: text-top;
 
 #facebook-share {
     background-color: #3b5998;
+    height: 100vh;
 }
 
 #facebook-share:hover {
