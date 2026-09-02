@@ -57,6 +57,6 @@ document.getElementById('twitter-share').addEventListener('click', function() {
 document.getElementById('linkedin-share').addEventListener('click', function() {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(document.title);
-    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}&text=${text}`;
     window.open(shareUrl, '_blank');
 });
