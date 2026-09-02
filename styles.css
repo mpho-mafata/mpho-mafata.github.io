@@ -196,34 +196,40 @@ vertical-align: text-top;
     background-color: #3b5998;
     height: 4vh;
     border-radius: 25px;
+    border: 10px #3b5998;
 }
 
 #facebook-share:hover {
     background-color: #2d4373;
     height: 4vh;
     border-radius: 25px;
+    border: 10px #2d4373;
 }
 
 #twitter-share {
     background-color: #1da1f2;
     height: 4vh;
     border-radius: 25px;
+    border: 10px #1da1f2;
 }
 
 #twitter-share:hover {
     background-color: #0c85d0;
     height: 4vh;
     border-radius: 25px;
+    border: 10px #0c85d0;
 }
 
 #linkedin-share {
     background-color: #0077b5;
     height: 4vh;
     border-radius: 25px;
+    border: 10px #0077b5;
 }
 
 #linkedin-share:hover {
     background-color: #005582;
     height: 4vh;
     border-radius: 25px;
+    border: 10px #005582;
 }
