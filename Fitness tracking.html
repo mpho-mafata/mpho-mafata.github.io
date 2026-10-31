@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+    	<link rel="script" href="script.js">
+    	<link rel="icon" href="/assets/logo.png" type="image/x-icon">
+		<div id="banner"></div>
+		<title>Mpho Mafata - creative developments</title>
+  </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EFJDZ06RSH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EFJDZ06RSH');
+</script>
+	
+<!--   My designated tabs here -->
+  <div class="tab">
+    <a href="home.html"> <button class="tablinks" onclick="langName(event, 'Home')" >Home</button> </a>
+	<div class="dropdown">
+    			<button class="dropbtn">Research Portfolio</button>
+    			<div class="dropdown-content">
+					<a href="ResearchStatement.html">Research Statement</a>
+      				<a href="pubs_peer_review.html">Peer-reviewed articles</a>
+      				<a href="pubs_popular_articles.html">Popular publications</a>
+      				<a href="pubs_conferences.html">Conferences</a>
+					<a href="workshops.html">Workshops</a>
+    			</div>
+  	</div>
+	<div class="dropdown">
+    			<button class="dropbtn">Sensory Data Science Portfolio</button>
+    			<div class="dropdown-content">
+					<a href="SensoryWheelGenerator.html">Sensory Wheel Generator</a>
+      				<a href="WordVennDiagramGenerator.html">WordVenn Diagram Generator</a>
+      				<a href="SensoryNetworkDiagrams.html">Sensory Network Diagrams</a>
+    			</div>
+  	</div>
+	<div class="dropdown">
+    			<button class="dropbtn active">Dashboard Deployment Portfolio</button>
+    			<div class="dropdown-content">
+      				<a href="SensoryWheelDashboard.html">Sensory Wheel Dashboard</a>
+                    <a href="GoogleLookerDashboards.html">Google Looker Dashboards</a>
+      				<a href="Fitness tracking.html">Fitness Tracking</a>
+    			</div>
+  	</div>
+	  
+	<a href="contact.html"> <button class="tablinks" onclick="langName(event, 'Contact Me')">Contact Me</button> </a>
+  </div>
+<!--   My designated tabs above-->
+	
+<body>
+<br>
+	
+<h2>Dashboards and Analysis Reports</h2>
+
+<p style="text-align:right">
+    <object style="text-align:left" type="text/html" width="100%" height="7500" data="./assets/flexdashboard.html"></object>
+</p>
+
+	<footer>
+		<div class="share-buttons">
+        	<button class="share-btn" id="facebook-share">Share on Facebook</button>
+        	<button class="share-btn" id="twitter-share">Share on Twitter</button>
+        	<button class="share-btn" id="linkedin-share">Share on LinkedIn</button>
+		</div>
+	</footer>
+	<button onclick="topFunction()" id="scrollbutton" title="Go to top">Back to top</button>
+	<script src="script.js"></script>
+	  
+</body>
+</html>
